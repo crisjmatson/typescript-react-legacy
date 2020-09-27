@@ -9,7 +9,6 @@ const Fetch: React.FunctionComponent = ({}) => {
 	const [temp, setTemp] = useState("");
 
 	useEffect(() => {
-		console.log("Functional Component: ", main);
 		if (main !== ("" || undefined || null)) {
 			setShowWeather(true);
 		} else console.log("awaiting api");
